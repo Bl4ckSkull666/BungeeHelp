@@ -1,0 +1,235 @@
+help:
+  global:
+    index:
+      1:
+        1: '&6&nIndex :'
+        2: '&1'
+        3: 
+          message: '&3Plot &f( &2Plots &f)'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help plot'
+        4: 
+          message: '&3BedWars'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help bedwars'
+        5: 
+          message: '&3Jobs'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help jobs'
+        6: 
+          message: '&3Chat'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help chat'
+        7: 
+          message: '&3Links &f( &2Helpful Links &f)'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help links'
+        8:
+          message: '&3MaM &f( &aMedieval Market &f)'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help mam'
+        9:
+          message: '&3Recipes &f( &2Server Recipes &f)'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help recipes'
+        10:
+          message: '&3Fan &f( &aSocial Networks &f)'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help fan'
+      2:
+      - '&6&nExplanation'
+      - '&1'
+      - '&3Cyan &f=> &2These are Menu Words, and could be wrote behind the Command.'
+      - '&bLightblue &f=> &aThese are Commands.'
+      - '&7Grey &f=> &2URLs &f( &2Links to get klick &f)'
+    plot:
+      1:
+      - '&2Use &b/plot &f( &2Optional&f: &2Plotsize token &f(&2k&f/&2m&f/&2g&f/&2l&f/&2c&f))'
+      - '&3plotdesc &f( &2Description of the Plotname &f)'
+    plotdesc:
+      1:
+      - '&6&nPlotname Description :'
+      - '&2part1_part2_part3_part4&f, &2Example&f: &2m_4_so_9'
+      - '&apart1_part3_part4&f, &2Example&f: &2l_n_12'
+      2:
+      - '&6part1&f: &2Tell the Plotsize&f, &ak &f= &aLittle&f, &bm &f= &bMiddle&f, &cg &f= &cBig&f, &6l &f= &6Luxus &2oder &5c &f= &5Kreativ'
+      - '&6part2&f: &aThis is the Street Number&f, &anot the House number.'
+      - '&6part3&f: &2Every Letter is the First Letter for the Direction. n = North, o = East, s = South und w = West'
+      - '&6part4&f: &aHere is the Plotnumber on the Street, called House Number too.'
+    bedwars:
+      1:
+      - '&2To came to Bedwars, you must go to the Minigames Potal. These can you find under &b/warp portale&2. There have you follow the &eYellow Way&2.'
+      - '&aAfter this, you must go to the Event Portals. They will you find in the Edges. Take a look around, and you will find the big Bedwars.'
+    jobs:
+      1:
+      - '&2You can have as a &aPopulation &l3 Jobs &r&2and the Standard Job Miner.'
+      - '&aAs a &bVIP &2can you have &b&l4 Jobs &r&2and the Standard Job Miner.'
+      2:
+      - '&2With &b/jobs list &2you can see all Jobs who exitst.'
+      - '&aWith &b/jobs join Jobname &2you get the choosen Job.'
+      - '&2With &b/jobs leave Jobname &2you leave the Job. But when you choose ist later again, you will start at the Begin.'
+      - '&aWith &b/jobs Jobname &2you will learn what you have to do in the respective Job, and as wage levels are divided.'
+      3:
+      - '&2With the Command &b/jobs language german &2you change the Language from the Jobs to German.'
+      - '&aThe Command &b/jobs show Jobname &2show you the Single Payment for the Job.'
+      - '&2The CommandDer Befehl &b/jobs hide Jobname &2deny the Single Payment.'
+      - '&aWhen you write &b/expdrop &2in the Chat, you will collect Experience Bottles.'
+    links:
+      1:
+      - '&6&nHelpful and useful Links'
+      - '&1'
+      - '&2The News &f--> &7www.amc-server.de'
+      - '&aThe Forum &f--> &7www.amc-server.de/forum'
+      - '&2All Commands &f--> &7www.amc-server.de/commands'
+      - '&aJobs at a glance &f--> &7www.amc-server.de/jobs'
+      - '&2The rules &f--> &7www.amc-server.de/rules'
+      - '&aCurrent Promotions &f--> &7www.amc-server.de/promotions'
+      - '&2Questions? &f--> &7www.amc-server.de/contact'
+      - '&2TeamSpeak 2/3 &f--> &7www.amc-server.de/teamspeak'
+    fan:
+      1:
+      - '&6Show other on Social Networks, taht you like this Server'
+      - '&1'
+      - '&2FaceBook Site &f--> &7www.amc-server.de/facebook'
+      - '&aGoogle Plus Site &f--> &7www.amc-server.de/gplus'
+      - '&2Twitter Site &f--> &7www.amc-server.de/twitter'
+      - '&aYouTube Channel &f--> &7www.amc-server.de/youtube'
+    mam:
+      1:
+        1: '&6&nThe Medieval Market'
+        2: '&1'
+        3: '&2Here can you buy all and much more.'
+        4: '&aNot only Material to build and live. Nice Features Commands like Fly, Invisible and many more.'
+        5: '&2The Medieval Markt, called MaM too, is every first Weekend in the Month.'
+        6:
+          message: '&aThe current Events can you find under &3mamevents'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help mamevents'
+    mamevents:
+      1:
+      - '&a03/05/2016 at 9:00 clock until 03/06/2016 at 21:00 clock'
+      - '&204/02/2016 at 9:00 clock until 04/03/2016 at 21:00 clock'
+      - '&a05/07/2016 at 9:00 clock until 05/08/2016 at 21:00 clock'
+      - '&206/04/2016 at 9:00 clock until 06/05/2016 at 21:00 clock'
+      - '&a07/02/2016 at 9:00 clock until 07/03/2016 at 21:00 clock'
+      - '&208/06/2016 at 9:00 clock until 08/07/2016 at 21:00 clock'
+      - '&a09/03/2016 at 9:00 clock until 09/04/2016 at 21:00 clock'
+      - '&210/01/2016 at 9:00 clock until 10/02/2016 at 21:00 clock'
+      - '&a11/05/2016 at 9:00 clock until 11/06/2016 at 21:00 clock'
+      - '&212/03/2016 at 9:00 clock until 12/04/2016 at 21:00 clock'
+      2:
+      - '&a01/07/2017 at 9:00 clock until 01/08/2017 at 21:00 clock'
+      - '&202/04/2017 at 9:00 clock until 02/05/2017 at 21:00 clock'
+      - '&a03/04/2017 at 9:00 clock until 03/05/2017 at 21:00 clock'
+      - '&a04/01/2017 at 9:00 clock until 04/02/2017 at 21:00 clock'
+      - '&a05/06/2017 at 9:00 clock until 05/07/2017 at 21:00 clock'
+      - '&a06/03/2017 at 9:00 clock until 06/04/2017 at 21:00 clock'
+      - '&a07/01/2017 at 9:00 clock until 07/02/2017 at 21:00 clock'
+      - '&a08/05/2017 at 9:00 clock until 08/06/2017 at 21:00 clock'
+      - '&a09/02/2017 at 9:00 clock until 09/03/2017 at 21:00 clock'
+      - '&a10/07/2017 at 9:00 clock until 10/08/2017 at 21:00 clock'
+    recipse:
+      1:
+        1: '&6&nServer Recipes'
+        2: '&1'
+        3: '&2Off emeralds you can as iron, gold and diamonds also armor, weapons and Tools createn.This will you get 2 times in Diamonds.'
+        4: '&1'
+        5: 
+          message: '&3recipe 1 &f- &2Saddle'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help recipe 1'
+        6:
+          message: '&3recipe 2 &f- &aGun Powder'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help recipe 2'
+        7:
+          message: '&3recipe 3 &f- &2Sandstone'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help recipe 3'
+        8:
+          message: '&3recipe 4 &f- &aChiseled Sandstone'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help recipe 4'
+        9:
+          message: '&3recipe 5 &f- &2Smooth Sandstone'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help recipe 5'
+        10:
+          message: '&3recipe 6 &f- &aCobweb'
+          hover-type: 'TEXT'
+          hover-text: '&eClick here to open next menu.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help recipe 6'
+    recipe:
+      1:
+      - '&6&nSaddle in the Workbench'
+      - '&1'
+      - '&5Leather   &f| &5Leather &f|   &5Leather'
+      - '&5Leather   &f| &5Leather &f|   &5Leather'
+      - '&8Iron Ingot&f| &7Empty  &f| &8Iron Ingot'
+      2:
+      - '&6&nGun Powder in the Workbench'
+      - '&1'
+      - '&7Empty    &f|    &7Empty    &f|    &7Empty'
+      - '&7Empty    &f| &8 &f|    &7Leer'
+      - '&8Flint &f| &8Flint &f| &8Flint'
+      3:
+      - '&6&nSandstone in the Workbench'
+      - '&1'
+      - '&eSand &f| &7Empty &f| &eSand'
+      - '&7Empty &f| &7Empty &f| &7Empty'
+      - '&eSand &f| &7Empty &f| &eSand'
+      4:
+      - '&6&nChiseled Sandstone in the Workbench'
+      - '&1'
+      - '&eSand &f|      &7Empty     &f| &eSand'
+      - '&7Empty &f| &8Cobblestone &f| &7Empty'
+      - '&eSand &f|      &7Empty     &f| &eSand'
+      5:
+      - '&6&nSmooth Sandstone in the Workbench'
+      - '&1'
+      - '&eSand &f| &7Empty  &f| &eSand'
+      - '&7Empty &f| &8Stein &f| &7Empty'
+      - '&eSand &f| &7Empty  &f| &eSand'
+      6:
+      - '&a&o&nCobweb in the Workbench'
+      - '&1'
+      - '&8String &f| &7Empty  &f| &8String'
+      - '&7Empty &f| &8String &f| &7Empty'
+      - '&8String &f| &7Empty  &f| &8String'
+    chat:
+      1:
+      - '&6&nChat Description'
+      - '&1'
+      - '&2The Number or the N/A behind the Name stand for the Age of the Person. When there is standing N/A in the Corner Brackets, mean it, that no Bithday was written.'
+      - '&aThe Color from the Number told the Gender. &9Men &e- &cWoman &e- &dNo Information'
+      - '&2The Corner Bracket exist in &eYellow &2and in Green. The &eYellow &2Corner Bracket means, that the Age wasn´t checked. This is at the Green Corner Brackets other.Here talk we from a Verify.'
+      - '&aHow the Verify works, find you here explained --> &7http://bit.ly/1HuqbRW'

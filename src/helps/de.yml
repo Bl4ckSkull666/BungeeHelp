@@ -1,0 +1,235 @@
+help:
+  global:
+    index:
+      1:
+        1: '&6&nInhaltsverzeichnis :'
+        2: '&1'
+        3: 
+          message: '&3GS &f( &2Grundstuecke &f)'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help gs'
+        4: 
+          message: '&3BedWars'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help bedwars'
+        5: 
+          message: '&3Berufe'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help berufe'
+        6: 
+          message: '&3Chat'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help chat'
+        7: 
+          message: '&3Links &f( &2Hilfreiche Links &f)'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help links'
+        8:
+          message: '&3MaM &f( &aMittelalter Markt &f)'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help mam'
+        9:
+          message: '&3Rezepte &f( &2Server Rezepte &f)'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help rezepte'
+        10:
+          message: '&3Fan &f( &aSoziale Netzwerke &f)'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help fan'
+      2:
+      - '&6&nErlauterung'
+      - '&1'
+      - '&3Tuerkis &f=> &2Dies sind Menu Woerter und koennen hinter den Befehl geschrieben werden.'
+      - '&bHellblau &f=> &aHierbei handelt es sich um Befehle.'
+      - '&7Grau &f=> &2URLs &f( &2Links zum anklicken &f)'
+    gs:
+      1:
+      - '&2Benutze &b/gs &f( &2Optional&f: &2Grundstuecksgroessen Kuerzel &f(&2k&f/&2m&f/&2g&f/&2l&f/&2c&f))'
+      - '&3gsdesc &f( &2Beschreibung des Grundstuecksnamen &f)'
+    gsdesc:
+      1:
+      - '&6&nGrundstuecksnamen Beschreibung :'
+      - '&2part1_part2_part3_part4&f, &2Beispiel&f: &2m_4_so_9'
+      - '&apart1_part3_part4&f, &2Beispiel&f: &2l_n_12'
+      2:
+      - '&6part1&f: &2Besagt die Grundstuecksgroesse&f, &ak &f= &aKlein&f, &bm &f= &bMittlere&f, &cg &f= &cGrosses&f, &6l &f= &6Luxus &2oder &5c &f= &5Kreativ'
+      - '&6part2&f: &aDies ist die Strassennummer&f, &anicht die Hausnummer.'
+      - '&6part3&f: &2Jeder Buchstabe hier ist der Anfangsbuchstabe fuer die Himmelsrichtungen. n = Nord, o = Ost, s = Sued und w = West'
+      - '&6part4&f: &aHier ist die Grundstuecksnummer auf der Strasse, auch Hausnummer genannt.'
+    bedwars:
+      1:
+      - '&2Um zum Bedwars zu kommen musst Du zu dem Minigames Portal. Das findest Du unter &b/warp portale&2. Dort folgst Du dann dem &egelben Weg&2.'
+      - '&aDanach musst Du zu den Event Portalen. Dieses findest Du in den Ecken. Schau Dich um, Du solltest das grosse Bedwars sehen.'
+    berufe:
+      1:
+      - '&2Du kannst als &aEinwohner &l3 Berufe &r&2und den Standarberuf Kumpel haben.'
+      - '&aAls &bVIP &2kannst Du &b&l4 Berufe &r&2und den Standardberuf Kumpel haben.'
+      2:
+      - '&2Mit &b/jobs list &2sieht Du alle Berufe, die es gibt.'
+      - '&aMit &b/jobs join Jobname &2trittst Du dem ausgesuchten Beruf bei.'
+      - '&2Mit &b/jobs leave Jobname &2verlaesst Du den Beruf.Solltest Du ihn spaeter erneut waehlen, faengst Du bei 0 an.'
+      - '&aMit &b/jobs Jobname &2erfaehrst Du, was Du in dem jeweiligen Beruf zu machen hast, und wie die Lohnstufen eingeteilt sind.'
+      3:
+      - '&2Durch den Befehl &b/jobs language german &2aenderst Du die Sprache der Berufe in Deutsch.'
+      - '&aDer Befehl &b/jobs show Jobname &2zeigt Dir die Einzelzahlung fuer den Beruf an.'
+      - '&2Der Befehl &b/jobs hide Jobname &2stellt die Einzelzahlung wieder aus.'
+      - '&aWenn Du &b/expdrop &2in den Chat schreibst, sammelst Du Erfahrungsflaschen.'
+    links:
+      1:
+      - '&6&nHilfreiche und Nuetzliche Links'
+      - '&1'
+      - '&2Die News &f--> &7www.amc-server.de'
+      - '&aDas Forum &f--> &7www.amc-server.de/forum'
+      - '&2Alle Befehle &f--> &7www.amc-server.de/befehle'
+      - '&aJobs auf einem Blick &f--> &7www.amc-server.de/berufe'
+      - '&2Die Regeln &f--> &7www.amc-server.de/regeln'
+      - '&aLaufende Aktionen &f--> &7www.amc-server.de/aktion'
+      - '&2Fragen? &f--> &7www.amc-server.de/kontakt'
+      - '&2TeamSpeak 2/3 &f--> &7www.amc-server.de/teamspeak'
+    fan:
+      1:
+      - '&6Zeige anderen in Sozialen Netzwerken das dir dieser Server gefaellt'
+      - '&1'
+      - '&2FaceBook Seite &f--> &7www.amc-server.de/facebook'
+      - '&aGoogle Plus Seite &f--> &7www.amc-server.de/gplus'
+      - '&2Twitter Seite &f--> &7www.amc-server.de/twitter'
+      - '&aYouTube Channel &f--> &7www.amc-server.de/youtube'
+    mam:
+      1:
+        1: '&6&nDer Mittelalter Markt'
+        2: '&1'
+        3: '&2Hier kannst du alles und noch vieles mehr Kaufen.'
+        4: '&aNicht nur Material zum Bauen und leben, auch nette Feature Befehle wie Fliegen und mehr.'
+        5: '&2Der Mittelalter Markt auch MaM genannt, ist jedes erste Wochenende im Monat.'
+        6:
+          message: '&aDie Aktuellsten Termine findest du unter &3mamtermine'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help mamtermine'
+    mamtermine:
+      1:
+      - '&a05.03.2016 um 9:00 Uhr bis 06.03.2016 um 21:00 Uhr'
+      - '&202.04.2016 um 9:00 Uhr bis 03.04.2016 um 21:00 Uhr'
+      - '&a07.05.2016 um 9:00 Uhr bis 08.05.2016 um 21:00 Uhr'
+      - '&204.06.2016 um 9:00 Uhr bis 05.06.2016 um 21:00 Uhr'
+      - '&a02.07.2016 um 9:00 Uhr bis 03.07.2016 um 21:00 Uhr'
+      - '&206.08.2016 um 9:00 Uhr bis 07.08.2016 um 21:00 Uhr'
+      - '&a03.09.2016 um 9:00 Uhr bis 04.09.2016 um 21:00 Uhr'
+      - '&201.10.2016 um 9:00 Uhr bis 02.10.2016 um 21:00 Uhr'
+      - '&a05.11.2016 um 9:00 Uhr bis 06.11.2016 um 21:00 Uhr'
+      - '&203.12.2016 um 9:00 Uhr bis 04.12.2016 um 21:00 Uhr'
+      2:
+      - '&a07.01.2017 um 9:00 Uhr bis 08.01.2017 um 21:00 Uhr'
+      - '&204.02.2017 um 9:00 Uhr bis 05.02.2017 um 21:00 Uhr'
+      - '&a04.03.2017 um 9:00 Uhr bis 05.03.2017 um 21:00 Uhr'
+      - '&a01.04.2017 um 9:00 Uhr bis 02.04.2017 um 21:00 Uhr'
+      - '&a06.05.2017 um 9:00 Uhr bis 07.05.2017 um 21:00 Uhr'
+      - '&a03.06.2017 um 9:00 Uhr bis 04.06.2017 um 21:00 Uhr'
+      - '&a01.07.2017 um 9:00 Uhr bis 02.07.2017 um 21:00 Uhr'
+      - '&a05.08.2017 um 9:00 Uhr bis 06.08.2017 um 21:00 Uhr'
+      - '&a02.09.2017 um 9:00 Uhr bis 03.09.2017 um 21:00 Uhr'
+      - '&a07.10.2017 um 9:00 Uhr bis 08.10.2017 um 21:00 Uhr'
+    rezepte:
+      1:
+        1: '&6&nServer Rezepte'
+        2: '&1'
+        3: '&2Aus Smaragden kannst du wie aus Eisen,Gold und Diamanten auch Ruestungen,Waffen und Werkzeuge Herstellen welche dann 2 x in Diamant herauskommen.'
+        4: '&1'
+        5:
+          message: '&3rezept 1 &f- &2Sattel'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help rezept 1'
+        6: 
+          message: '&3rezept 2 &f- &aSchwarzpulver'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help rezept 2'
+        7: 
+          message: '&3rezept 3 &f- &2Sandstein'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help rezept 3'
+        8: 
+          message: '&3rezept 4 &f- &aGemeisselter Sandstein'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help rezept 4'
+        9:
+          message: '&3rezept 5 &f- &2Glatter Sandstein'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help rezept 5'
+        10: 
+          message: '&3rezept 6 &f- &aSpinnenwebe'
+          hover-type: 'TEXT'
+          hover-text: '&eKlick hier um das nächste Menü aufzurufen.'
+          click-type: 'RUN_COMMAND'
+          click-text: '/help rezept 6'
+    rezept:
+      1:
+      - '&6&nSattel in der Werkbank'
+      - '&1'
+      - '&5Leder   &f| &5Leder &f|   &5Leder'
+      - '&5Leder   &f| &5Leder &f|   &5Leder'
+      - '&8Eisenbaren &f| &7Leer  &f| &8Eisenbaren'
+      2:
+      - '&6&nSchwarzpulver in der Werkbank'
+      - '&1'
+      - '&7Leer    &f|    &7Leer    &f|    &7Leer'
+      - '&7Leer    &f| &8Feuerstein &f|    &7Leer'
+      - '&8Feuerstein &f| &8Feuerstein &f| &8Feuerstein'
+      3:
+      - '&6&nSandstein in der Werkbank'
+      - '&1'
+      - '&eSand &f| &7Leer &f| &eSand'
+      - '&7Leer &f| &7Leer &f| &7Leer'
+      - '&eSand &f| &7Leer &f| &eSand'
+      4:
+      - '&6&nGemeisselter Sandstein in der Werkbank'
+      - '&1'
+      - '&eSand &f|      &7Leer     &f| &eSand'
+      - '&7Leer &f| &8Pflasterstein &f| &7Leer'
+      - '&eSand &f|      &7Leer     &f| &eSand'
+      5:
+      - '&6&nGlatter Sandstein in der Werkbank'
+      - '&1'
+      - '&eSand &f| &7Leer  &f| &eSand'
+      - '&7Leer &f| &8Stein &f| &7Leer'
+      - '&eSand &f| &7Leer  &f| &eSand'
+      6:
+      - '&a&o&nSpinnwebe in der Werkbank'
+      - '&1'
+      - '&8Faden &f| &7Leer  &f| &8Faden'
+      - '&7Leer &f| &8Faden &f| &7Leer'
+      - '&8Faden &f| &7Leer  &f| &8Faden'
+    chat:
+      1:
+      - '&6&nChat Erklaerung'
+      - '&1'
+      - '&2Die Zahl bzw das N/A hinter dem Namen steht fuer das Alter der Person. Wenn noch das N/A in den Eckklammern steht, bedeutet es, das noch kein Geburtsdatum angegeben wurde.'
+      - '&aDie Farbe der Zahl signalisiert das angegebene Geschlecht. &9Mann &e- &cFrau &e- &dKeine Angabe'
+      - '&2Auch die Eckklammern gibt es in &eGelb &2sowie in Gruen, Die &eGelbe &2Eckklammer besagt, dass das Alter nicht geprüft wurde, was bei der Gruenen anders ist. Hier sprechen wir von Verifiziert.'
+      - '&aWie die Verifizierung funktioniert findest du hier erklaert --> &7http://bit.ly/1HuqbRW'
