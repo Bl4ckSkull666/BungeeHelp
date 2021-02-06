@@ -6,17 +6,18 @@
 package de.bl4ckskull666.bungeehelp.commands;
 
 import de.bl4ckskull666.bungeehelp.BH;
+import de.bl4ckskull666.bungeehelp.LanguageManager;
 import de.bl4ckskull666.bungeehelp.utils.Numbers;
-import de.bl4ckskull666.mu1ti1ingu41.Language;
 import de.bl4ckskull666.mu1ti1ingu41.utils.Utils;
+import java.util.HashMap;
 import java.util.logging.Level;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.chat.ClickEvent;
-import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.HoverEvent;
 import net.md_5.bungee.api.chat.TextComponent;
+import net.md_5.bungee.api.chat.hover.content.Text;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Command;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -39,6 +40,7 @@ public class Help extends Command {
         ProxyServer.getInstance().getScheduler().runAsync(BH.getPlugin(), new runCommand((ProxiedPlayer)s, a));
     }
     
+    
     private class runCommand implements Runnable {
         private final ProxiedPlayer _p;
         private final String[] _a;
@@ -50,9 +52,10 @@ public class Help extends Command {
         
         @Override
         public void run() {
-            FileConfiguration fc = Language.getMessageFile(BH.getPlugin(), _p.getUniqueId());
+            HashMap<String, String> sr = new HashMap<>();
+            FileConfiguration fc = LanguageManager.getLanguageConfiguration(_p);
             if(fc == null) {
-                Language.sendMessage(BH.getPlugin(), _p, "internal-error", "We are Sorry, it's take a internal error. Please try again.");
+                LanguageManager.sendMessage(_p, "internal-error", "We are Sorry, it's take a internal error. Please try again.", sr);
                 return;
             }
 
@@ -74,8 +77,8 @@ public class Help extends Command {
             }
 
             if(!fc.isConfigurationSection(section + "." + ssection)) {
-                 Language.sendMessage(BH.getPlugin(), _p, "unknow-section", "We are Sorry, but we can't find the given menu.");
-                 return;
+                LanguageManager.sendMessage(_p, "unknow-section", "We are Sorry, but we can't find the given menu.", sr);
+                return;
             }
             
             int pages = 0;
@@ -86,18 +89,18 @@ public class Help extends Command {
 
             if(!fc.isList(section + "." + ssection + "." + String.valueOf(page)) && !fc.isConfigurationSection(section + "." + ssection + "." + String.valueOf(page))) {
                 if(!fc.isList(section + "." + ssection + ".1")) {
-                    Language.sendMessage(BH.getPlugin(), _p, "no-page-found", "Can't find the giveb Page. View you Page 1.");
+                    LanguageManager.sendMessage(_p, "no-page-found", "Can't find the giveb Page. View you Page 1.", sr);
                     page = 1;
                 } else {
-                    Language.sendMessage(BH.getPlugin(), _p, "internal-error", "We are Sorry, it's take a internal error. Please try again.");
+                    LanguageManager.sendMessage(_p, "internal-error", "We are Sorry, it's take a internal error. Please try again.", sr);
                     return;
                 }
             }
 
-            Language.sendMessage(BH.getPlugin(), _p, "header", "&e=============== &6Help Menu &e===============");
+            LanguageManager.sendMessage(_p, "header", "&e=============== &6Help Menu &e===============", sr);
             if(fc.isList(section + "." + ssection + "." + String.valueOf(page))) {
                 for(String line: fc.getStringList(section + "." + ssection + "." + String.valueOf(page)))
-                    _p.sendMessage(Language.convertString(setColor(line, _p)));
+                    _p.sendMessage(LanguageManager.convertString(setColor(line, _p)));
             } else if(fc.isConfigurationSection(section + "." + ssection + "." + String.valueOf(page))) {
                 for(String k: fc.getConfigurationSection(section + "." + ssection + "." + String.valueOf(page)).getKeys(false)) {
                     String path = section + "." + ssection + "." + String.valueOf(page) + "." + k;
@@ -107,7 +110,7 @@ public class Help extends Command {
                             msg.setHoverEvent(
                                     new HoverEvent(
                                     Utils.isHoverAction("show_" + fc.getString(path + ".hover-type", "text"))?HoverEvent.Action.valueOf(("show_" + fc.getString(path + ".hover-type", "text")).toUpperCase()):HoverEvent.Action.SHOW_TEXT, 
-                                    new ComponentBuilder(setColor(fc.getString(path + ".hover-text"), _p)).create()
+                                    new Text(setColor(fc.getString(path + ".hover-text"), _p))
                                 )
                             );
                         }
@@ -132,9 +135,12 @@ public class Help extends Command {
                 return;
             }
             
-            if(pages > 1)
-                Language.sendMessage(BH.getPlugin(), _p, "page", "Page %cur% of %max% pages.", new String[] {"%cur%", "%max%"}, new String[] {String.valueOf(page), String.valueOf(pages)});
-            Language.sendMessage(BH.getPlugin(), _p, "footer", "&e=============== &6Help Menu &e===============");
+            if(pages > 1) {
+                sr.put("%cur%", String.valueOf(page));
+                sr.put("%max%", String.valueOf(pages));
+                LanguageManager.sendMessage(_p, "page", "Page %cur% of %max% pages.", sr);
+            }
+            LanguageManager.sendMessage(_p, "footer", "&e=============== &6Help Menu &e===============", sr);
                 
         }
     }

@@ -28,7 +28,8 @@ public class BH extends Plugin {
                     ProxyServer.getInstance().getPluginManager().registerCommand(this, new Help(cmd, _config.getString("commands." + cmd)));
             }
         }
-        Mu1ti1ingu41.loadExternalDefaultLanguage(this, "helps");
+        
+        ProxyServer.getInstance().getPluginManager().registerCommand(this, new LanguageManager());
     }
     
     public void loadConfig() {
@@ -37,6 +38,10 @@ public class BH extends Plugin {
     
     public void saveConfig() {
         Mu1ti1ingu41.saveConfig(_config, _plugin);
+    }
+    
+    public FileConfiguration getConfig() {
+        return _config;
     }
     
     private static BH _plugin = null;
